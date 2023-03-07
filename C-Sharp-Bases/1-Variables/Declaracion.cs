@@ -42,16 +42,20 @@
             int entero = default; //Por defecto 0
             Console.WriteLine(entero);
 
-            int entero2 = default(int);
+            int entero2 = default(int);//0
             Console.WriteLine(entero2);
 
-            bool esVerdaderoONo = default;
+            bool esVerdaderoONo = default;//falso
             Console.WriteLine(esVerdaderoONo);
 
-            decimal decimal1 = default;
+            decimal decimal1 = default;//01/01/01
             Console.WriteLine(decimal1);
+
             DateTime dateTime1 = default;
             Console.WriteLine(dateTime1);
+
+            string texto = default;// null
+            Console.WriteLine(texto);
         }
     }
 }
