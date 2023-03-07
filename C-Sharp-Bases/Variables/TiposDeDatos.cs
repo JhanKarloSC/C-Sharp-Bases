@@ -15,7 +15,7 @@
 
             short short1 = 30_000; // -32.768 hasta 32.767
             ushort ushort1 = 0; // 0 hasta 65.535
-            
+
         }
 
         void Flotantes()
@@ -43,6 +43,43 @@
         {
             char unaLetra = 'a';
             string palabra = "Jhan Karlo";
+
+            //Caracteres
+            string texto = "Hola \"guapo\"";
+            Console.WriteLine(texto);
+            string texto2 = "Hola \\ back-slash";
+            Console.WriteLine(texto2);
+
+            //Verbatim
+            string textoBackslash = @"Hola \back-slash";
+            Console.WriteLine(textoBackslash);
+            string textoLargo = @"Hola
+                Esto permite escribir un string de varias líneas
+            ";
+
+            string textoLargo2 = """
+                Este es el nuevo Verbatim de C# 11.
+                Permite también escribir varias líneas
+                "Hola" con doble comilla
+                Jhan Karlo
+                """;
+            Console.WriteLine(textoLargo);
+            Console.WriteLine(textoLargo2);
+
+        }
+
+        void FechaYTiempo()
+        {
+            DateTime hoy = DateTime.Now;
+            DateTime fecha1 = new DateTime(2023, 3, 7, 9, 10, 1);
+            DateTime sumarFecha1 = DateTime.Now.AddDays(1);
+            Console.WriteLine(hoy);
+            Console.WriteLine(fecha1);
+            Console.WriteLine(sumarFecha1);
+            Console.WriteLine(sumarFecha1.Day);
+            Console.WriteLine(sumarFecha1.DayOfWeek);
+            Console.WriteLine(sumarFecha1.DayOfYear);
+            Console.WriteLine(sumarFecha1.TimeOfDay);
         }
     }
 }
