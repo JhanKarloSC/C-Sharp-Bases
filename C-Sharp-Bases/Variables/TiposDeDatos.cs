@@ -17,6 +17,32 @@
             ushort ushort1 = 0; // 0 hasta 65.535
             
         }
-        
+
+        void Flotantes()
+        {
+            float float1 = 18.123456789f; // ocupa 4 bytes; de 6 a 9 dígitos de precisión
+            Console.WriteLine("El float1 es:");
+            Console.WriteLine(float1);
+
+            double double1 = 475.955541811545451554d; // ocupa 8 bytes; de 15 a 17 dígitos de precisión
+            Console.WriteLine("El double1 es:");
+            Console.WriteLine(double1);
+
+            decimal decimal1 = 99.99m; // ocupa 16 bytes; de 28 a 29 dígitos de precisión
+            Console.WriteLine("El decimal1 es:");
+            Console.WriteLine(decimal1);
+        }
+
+        void Booleano()
+        {
+            bool soyHumano = true;
+            bool estoyApagado = false;
+        }
+
+        void Textos()
+        {
+            char unaLetra = 'a';
+            string palabra = "Jhan Karlo";
+        }
     }
 }
