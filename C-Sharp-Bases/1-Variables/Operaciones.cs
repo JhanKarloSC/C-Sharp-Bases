@@ -37,6 +37,38 @@
 
 
             }
+
+            void OperacionesAsignacion()
+            {
+                var numero1 = 10;
+                var numero2 = 20;
+
+                var resultado = numero1 + numero2;
+
+                numero1 += numero2;
+
+                numero1 *= numero2;
+
+                numero1 -= numero2;
+
+                numero1 /= numero2;
+            }
+
+            void Constantes()
+            {
+                const int numero1 = 10;
+
+                var valor = Math.PI;
+
+                //numero1 = 1; no es posible
+            }
+
+            void Advertencias()
+            {
+#pragma warning disable CS0219 // Variable is assigned but its value is never used
+                var numero1 = 1;
+#pragma warning restore CS0219 // Variable is assigned but its value is never used
+            }
         }
     }
 }
