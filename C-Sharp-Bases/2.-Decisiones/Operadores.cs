@@ -128,6 +128,25 @@ namespace C_Sharp_Bases._2._Decisiones
                 > 0 and < 18 => "Menor edad",
                 >= 18 => "Mayor edad"
             };
+
+            var fecha = DateTime.Today;
+
+            var parteAnio = fecha.Month switch
+            {
+                1 or 2 or 3 or 4 or 5 or 6 => "Primera parte del año",
+                7 or 7 or 8  or 9 or 10 or 11 or 12 =>"Segunda parte del año",
+                _ => "no hay que decir"
+            };
+        }
+
+        void expresionSwitchDiscard()
+        {
+            var edad = 65;
+            var mensaje = edad switch
+            {
+                >64=>"adulto mayor",
+                _ => "nara"
+            };
         }
     }
 }
