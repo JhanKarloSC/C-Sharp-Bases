@@ -19,9 +19,11 @@
 
             var numero1 = 1;
             var numero2 = 2;
-
-            string texto = "La suma de " + numero1 + " + " + numero2 + " es:" + numero1 + numero2;
+            var resultado = numero1 + numero2;
+            string texto = "La suma de " + numero1 + " + " + numero2 + " es:" + resultado;
             Console.WriteLine(texto);
+
+            Console.WriteLine($"La suma de {numero1} + {numero2} es: {resultado}");
         }
     }
 }

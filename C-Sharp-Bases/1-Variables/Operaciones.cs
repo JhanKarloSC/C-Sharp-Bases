@@ -4,14 +4,39 @@
     {
         public Operaciones()
         {
-            var numero1 = 30;
-            var numero2 = 20;
+            void OperacionesBinarias()
+            {
+                var numero1 = 30;
+                var numero2 = 20;
 
-            var suma = numero1 + numero2;
-            var resta = numero1 - numero2;
-            var multiplicacion = numero1 * numero2;
-            var division = numero1 / numero2;
-            var residuo = numero1 % numero2;
+                var suma = numero1 + numero2;
+                var resta = numero1 - numero2;
+                var multiplicacion = numero1 * numero2;
+                var division = numero1 / numero2;
+                var residuo = numero1 % numero2;
+            }
+
+            void OperacionesUnitarias()
+            {
+                var numero1 = 10;
+                var numero2 = 20;
+
+                var resultado1 = -numero1;// resultado1 = (-1) * numero1
+
+                var resultado2 = numero1++; // resultado2 = numero1 + 1
+
+                var resultado3 = -numero1--; // resultado3 = numero1 - 1
+
+                var resultado4 = ++numero1; // resultado2 = numero1 + 1
+
+                var resultado5 = --numero1; // resultado3 = numero1 - 1
+
+                var suma1 = numero1++ + numero2;// numero1 + numero2; numero1 = numero1 + 1
+
+                var suma2 = ++numero1 + numero2;// numero1 = numero1 + 1; numero1 + numero2
+
+
+            }
         }
     }
 }
